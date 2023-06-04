@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK - 7</title>
+    <style>
+        body
+        {
+            border: 1px solid black;
+            padding-top: 5px;
+            padding-left: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+ 
+    
+        1st number: <input type="text"  id="id1"><br><br>
+        2nd number: <input type="text"  id="id2"><br><br>
+      <button onclick="multiplyby()" value="Multiply">Multiply</button>
+      <button onclick="divideby()" value="divide">divide</button>
+   
+        <p>The Result is: <br>
+            <span id="result"></span>
+        </p>
+
+    <script>
+        function multiplyby()
+        {
+            var num1 = document.getElementById("id1").value
+            var num2 = document.getElementById("id2").value
+            document.getElementById("result").innerHTML = num1*num2
+        }
+
+        function divideby()
+        {
+            var num1 = document.getElementById("id1").value
+            var num2 = document.getElementById("id2").value
+            document.getElementById("result").innerHTML = num1 / num2
+        }
+    </script>
+    
+</body>
+</html>
